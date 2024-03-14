@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: rgb(89, 118, 113);
+}
+
+.nav {
+  background-color: rgb(4, 42, 38);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 2vw;
+}
+
+.site-title{
+  font-size: 3vw;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow:  0 0 5px rgb(225, 0, 90);
+  margin: 0;
+  padding: 1vw 2vw;
+  transition: .2s ease-in-out;
+}
+
+.site-title:hover{
+  background-color: rgba(255, 255, 255, 0.249);
+}
+
+.nav ul{
+  padding: 0;
+  display: flex;
+  gap: 5vw;
+}
+
+ul a{
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 2vw;
+  text-shadow:  0 0 5px rgb(227, 193, 227);
+  scale: .9;
+  transition: .2s ease-in-out;
+}
+
+ul a:hover{
+  scale: 1;
+}
+.nav a {
+  text-decoration: none;
+}
