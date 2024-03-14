@@ -13,6 +13,7 @@ body{
   align-items: center;
   justify-content: space-between; 
   padding: 0 2vw;
+  height: 5vw;
 }
 
 .site-title{
@@ -23,7 +24,7 @@ body{
   color: rgb(255, 255, 255);
   text-shadow:  0 0 5px rgb(225, 0, 90);
   margin: 0;
-  padding: 1vw 2vw;
+  padding: .7vw 2vw;
   transition: .2s ease-in-out;
 }
 
