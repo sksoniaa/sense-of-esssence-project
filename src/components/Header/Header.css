@@ -10,10 +10,26 @@ body{
 .nav {
   background-color: rgb(4, 42, 38);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between; 
   padding: 0 2vw;
-  height: 5vw;
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5vw;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
 }
 
 .site-title{
@@ -23,8 +39,6 @@ body{
   font-family: "Dancing Script", cursive;
   color: rgb(255, 255, 255);
   text-shadow:  0 0 5px rgb(225, 0, 90);
-  margin: 0;
-  padding: .7vw 2vw;
   transition: .2s ease-in-out;
 }
 
@@ -32,24 +46,16 @@ body{
   background-color: rgba(255, 255, 255, 0.249);
 }
 
-.nav ul{
-  padding: 0;
-  display: flex;
-  gap: 5vw;
-}
 
 ul a{
   color: white;
   font-family: "Dancing Script", cursive;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-shadow:  0 0 5px rgb(227, 193, 227);
-  scale: .9;
   transition: .2s ease-in-out;
 }
 
 ul a:hover{
-  scale: 1;
-}
-.nav a {
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.249);
+
 }
