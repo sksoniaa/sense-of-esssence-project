@@ -4,36 +4,41 @@
 
 body{
   margin: 0;
-  background-color: rgb(89, 118, 113);
+  background-color: rgba(203, 240, 234, 0.538)
 }
 
-.nav {
-  background-color: rgb(4, 42, 38);
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between; 
-  padding: 0 2vw;
-}
 
-.nav ul{
-  padding: 0;
-  margin: 0;
+.header{
+  height: 100px;
   display: flex;
-  gap: 5vw;
-  list-style: none;
-}
-
-.nav a {
-  text-decoration: none;
-  display: flex;
-  height: 100%;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: .25rem;
+  background-color: rgb(4, 42, 38);
+  padding: 0 2vw;
+  box-shadow: 0 4px 4px black ;
 }
 
+.header .ul a{
+  text-decoration: none;
+  color: white;
+  transition: .2s ease-in-out;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.header .ul a:hover{
+  color: aquamarine;
+} 
+
+.header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  display: none;
+}
 .site-title{
-  font-size: 3vw;
+  font-size: 5vh;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-decoration: none;
   font-family: "Dancing Script", cursive;
@@ -41,21 +46,62 @@ body{
   text-shadow:  0 0 5px rgb(225, 0, 90);
   transition: .2s ease-in-out;
 }
-
 .site-title:hover{
-  background-color: rgba(255, 255, 255, 0.249);
+  color: rgb(225, 0, 90);
+}
+
+.close{
+  font-size: 20px;
+}
+.open{
+  font-size: 30px;
 }
 
 
-ul a{
-  color: white;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5vw;
-  text-shadow:  0 0 5px rgb(227, 193, 227);
-  transition: .2s ease-in-out;
-}
 
-ul a:hover{
-  background-color: rgba(255, 255, 255, 0.249);
+@media screen and (max-width: 1200px) {
+  .header button {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  .header .ul{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(4, 42, 38);
+    transition: 1s ease-in-out;
+    transform: translateY(-110vh);
+
+  }
+  .close{
+    position: absolute;
+    top: -45px;
+    right: 20px;
+  }
+
+  .open{
+    transition: all .5s;
+  }
+
+
+  /* class from useRef */
+
+  .header .responsiveNav{
+    transform: unset;
+  }
+
+  .header .responsiveNav ~ .open{
+    opacity: 0;
+    visibility: hidden;
+  }
 
 }
