@@ -3,19 +3,23 @@
 }
 
 body{
-  margin: 0;
-  background-color: rgba(203, 240, 234, 0.538)
+  position: relative;
 }
-
-
 .header{
-  height: 100px;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(4, 42, 38);
   padding: 0 2vw;
-  box-shadow: 0 4px 4px black ;
+  border: 0.5px solid rgb(87, 87, 87);
+  border-radius: 60px;
+  width: 90vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 5px;
+  left: 4vw;
+  z-index: 9999;
 }
 
 .header .ul a{
@@ -24,9 +28,11 @@ body{
   transition: .2s ease-in-out;
   margin: 0 20px;
   text-transform: uppercase;
+
 }
-.header .ul a:hover{
+.header .ul a:hover, .site-title:hover{
   color: aquamarine;
+  
 } 
 
 .header button {
@@ -38,17 +44,14 @@ body{
   display: none;
 }
 .site-title{
-  font-size: 5vh;
+  font-size: 30px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-decoration: none;
   font-family: "Dancing Script", cursive;
   color: rgb(255, 255, 255);
-  text-shadow:  0 0 5px rgb(225, 0, 90);
   transition: .2s ease-in-out;
 }
-.site-title:hover{
-  color: rgb(225, 0, 90);
-}
+
 
 .close{
   font-size: 20px;
@@ -68,7 +71,7 @@ body{
 
   .header .ul{
     position: fixed;
-    top: 80px;
+    top: 5vh;
     left: 0;
     height: 100%;
     width: 100%;
@@ -80,6 +83,8 @@ body{
     background-color: rgb(4, 42, 38);
     transition: 1s ease-in-out;
     transform: translateY(-110vh);
+    z-index: 9999;
+
 
   }
   .close{
@@ -90,6 +95,7 @@ body{
 
   .open{
     transition: all .5s;
+
   }
 
 
@@ -97,11 +103,12 @@ body{
 
   .header .responsiveNav{
     transform: unset;
+    z-index: 9999;
   }
 
   .header .responsiveNav ~ .open{
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden
   }
 
 }

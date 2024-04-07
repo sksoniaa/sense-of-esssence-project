@@ -4,7 +4,8 @@ import New from './pages/New/New'
 import Trending from './pages/Trending/Trending'
 import Samplings from './pages/Samplings/Samplings'
 import Home from './pages/Home/Home'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
 

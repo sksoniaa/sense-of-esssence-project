@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import { IoMenu } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 import './Header.css'
