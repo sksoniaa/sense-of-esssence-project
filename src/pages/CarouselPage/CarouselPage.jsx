@@ -7,6 +7,7 @@ import gucciflora from '/src/assets/gucci-flora.webp'
 import linterdit from '/src/assets/linterdit.webp'
 import neroliamara from '/src/assets/van-cleef-neroli-amara.jpg'
 import ysllibre from '/src/assets/ysl-libre.webp'
+import { Link } from 'react-router-dom';
 
 
 function CarouselPage() {
@@ -20,7 +21,9 @@ function CarouselPage() {
     <>
     <Carousel activeIndex={index} onSelect={handleSelect} style={{marginTop: '12vh'}}>
       <Carousel.Item className='carousel-item'>
-        <img src={linterdit} alt="" />
+        <Link to='/perfume/linterdit'>
+          <img src={linterdit} alt="" />
+        </Link>
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
         <img src={lightblue} alt="" />
